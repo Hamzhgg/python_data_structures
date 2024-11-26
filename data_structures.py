@@ -51,15 +51,83 @@ len(student)
 student.items()
 
 # use items() in a for-in loop
-for key, val in student.items():
-    print(f"{key} is {val}")
+# for key, val in student.items():
+    # print(f"{key} is {val}")
 
-print(student.values())
+# print(student.values())
 
-# print (TThing}
+where_my_things_are = {
+    'coffee cup': 'on the desk',
+    'hairbrush': 'at home',
+    'denis': 'I dont know... outside?'
+}
 
-# LISTS 
+for thing, location in where_my_things_are.items():
+    pass
+    # print(f"{thing} is kept {location}")
+
+# LISTS
 list1 = []
-list2 = []
+list2 = list()
 
-colors = ['red', ]
+colors = ['red', 'green', 'blue']
+dic = {
+    'a': 'red',
+    'b': 'green',
+    'c': 'blue'
+}
+colors2 = list(dic.keys())
+
+# replacing items
+colors[-1] = 'brown'
+
+# adding an item
+colors.append('purple')
+
+# add multiple items
+colors.extend(['orange', 'black'])
+
+# insert an item
+colors.insert(1, 'yellow')
+
+# print(colors)
+# remove an item
+banana = colors.pop(2)
+
+# print(banana)
+
+# remove specific item
+colors.remove('orange')
+
+# empty the entire list
+# colors.clear()
+
+# iterate over our list
+# for color in colors:
+#     print(color)
+
+# for idx, color in enumerate(colors):
+#     print(idx, color)
+
+
+# TUPLE
+
+colors = ('red', 'green', 'blue')
+
+hello_tuple = 'Hello',
+
+# can use index() method find specific values
+blue_idx = colors.index('blue')
+# print(blue_idx)
+
+# iterate using enumrate
+# for idx, color in enumerate(colors):
+#     print(idx, color)
+
+# for color in colors:
+#     print(color)
+
+
+# unpacking
+r, banana, b = colors
+print(r, banana, b)
